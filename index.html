@@ -1,37 +1,226 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/ankushash786/coursera-test/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Module 2 Solution</title>
+    <link rel="stylesheet" href="courserastyle.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        /* small paragraphs */
+        /* large devices only */
+        @media (min-width: 1200px) {
 
-### Markdown
+            .col-lg-1,
+            .col-lg-2,
+            .col-lg-3 {
+                float: left;
+            }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            .col-lg-1 {
+                width: 33.33%;
+            }
 
-```markdown
-Syntax highlighted code block
+            .col-lg-2 {
+                width: 33.33%;
+            }
 
-# Header 1
-## Header 2
-### Header 3
+            .col-lg-3 {
+                width: 33.33%;
+            }
+        }
 
-- Bulleted
-- List
+        @media (min-width: 1200px) {
+            p.one1 {
+                border: 3.5px solid black;
+                width: 40%;
+                float: right;
+                background-color: orange;
+                text-align: center;
+                font-family: Segoe Print;
+                margin-top: 30px;
+                margin-right: 10px;
+            }
 
-1. Numbered
-2. List
+            p.one2 {
+                border: 3.5px solid black;
+                background-color: lawngreen;
+                width: 40%;
+                float: right;
+                font-family: Segoe Print;
+                text-align: center;
+                margin-right: 10px;
+                margin-top: 30px;
+            }
 
-**Bold** and _Italic_ and `Code` text
+            p.one3 {
+                border: 3.5px solid black;
+                background-color: hotpink;
+                width: 40%;
+                float: right;
+                font-family: Segoe Print;
+                text-align: center;
+                margin-right: 10px;
+                margin-top: 30px;
+            }
+        }
 
-[Link](url) and ![Image](src)
-```
+        /* medium devices only */
+        @media (min-width: 992px) and (max-width: 1199.99px) {
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+            .col-md-1,
+            .col-md-2,
+            .col-md-3 {
+                float: left;
+            }
 
-### Jekyll Themes
+            .col-md-1 {
+                width: 50%;
+            }
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ankushash786/coursera-test/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+            .col-md-2 {
+                width: 50%;
+            }
 
-### Support or Contact
+            .col-md-3 {
+                width: 100%;
+            }
+        }
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        @media (min-width: 992px) and (max-width: 1199.99px) {
+            p.one1 {
+                border: 3.5px solid black;
+                width: 40%;
+                float: right;
+                background-color: orange;
+                text-align: center;
+                font-family: Segoe Print;
+                margin-top: 30px;
+                margin-right: 10px;
+            }
+
+            p.one2 {
+                border: 3.5px solid black;
+                background-color: lawngreen;
+                width: 40%;
+                float: right;
+                font-family: Segoe Print;
+                text-align: center;
+                margin-right: 10px;
+                margin-top: 30px;
+            }
+
+            p.one3 {
+                border: 3.5px solid black;
+                background-color: hotpink;
+                width: 40%;
+                float: right;
+                font-family: Segoe Print;
+                text-align: center;
+                margin-right: 10px;
+                margin-top: 30px;
+            }
+        }
+
+        /* for small devices */
+        @media (max-width: 991.99px) {
+            p.one1 {
+                border: 3.5px solid black;
+                width: 40%;
+                float: right;
+                background-color: orange;
+                text-align: center;
+                font-family: Segoe Print;
+                margin-top: 0px;
+                margin-right: 10px;
+            }
+
+            p.one2 {
+                border: 3.5px solid black;
+                background-color: lawngreen;
+                width: 40%;
+                float: right;
+                font-family: Segoe Print;
+                text-align: center;
+                margin-right: 10px;
+                margin-top: 0px;
+            }
+
+            p.one3 {
+                border: 3.5px solid black;
+                background-color: hotpink;
+                width: 40%;
+                float: right;
+                font-family: Segoe Print;
+                text-align: center;
+                margin-right: 10px;
+                margin-top: 0px;
+            }
+        }
+
+        /* large paragraphs */
+        p.two {
+            border: 5px solid black;
+            background-color: skyblue;
+            width: auto;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: Segoe Print;
+            color: darkred;
+            text-align: center;
+            padding-top: 46px;
+        }
+    </style>
+</head>
+
+<body bgcolor="yellow">
+    <center>
+        <font face="Comic Sans MS" size="30" color="red"> Our Menu </font>
+    </center>
+    <div class="col-lg-1 col-md-1">
+        <P class="one1"><b> Chicken </b></P>
+        <p class="two"><b>
+                Chicken is the most common type of poultry in the world, and was one of the first domesticated
+                animals. Chicken is a major worldwide source of meat and eggs for human consumption. It is prepared as
+                food in a wide variety of ways, varying by region and culture. The prevalence of chickens is due to
+                almost the entire chicken being edible, and the ease of raising them.
+                Chicken as a meat has been depicted in Babylonian carvings from around 600 BC. Chicken was one of the
+                most common meats available in the Middle Ages.[citation needed] It was eaten over most of the Eastern
+                hemisphere and a number of different kinds of chicken such as capons, pullets and hens were eaten.</b>
+        </p>
+    </div>
+    <div class="col-lg-2 col-md-2">
+        <P class="one2"><b> Beef </b></P>
+        <p class="two"><b>
+                Whereby beef is used as a primary ingredient. Beef is the culinary name for meat from bovines,
+                especially cattle. Beef can be harvested from cows, bulls, heifers or steers. Acceptability as a food
+                source varies in different parts of the world.
+                Beef is the third most widely consumed meat in the world, accounting for about 25% of meat production
+                worldwide, after pork and poultry at 38% and 30% respectively. In absolute numbers, the United
+                States, Brazil, and the People's Republic of China are the world's three largest consumers of beef. On a
+                per capita basis in 2009, Argentines consumed the most beef at 64.6 kg per person; people in the U.S.
+                ate 40.2 kg, while those in the E.U. ate 16.9 kg.</b>
+        </p>
+    </div>
+    <div class="col-lg-3 col-md-3">
+        <P class="one3"><b> Shushi </b></P>
+        <p class="two"><b>
+                Sushi is a Japanese dish of prepared vinegared rice (sushi-meshi), usually with some sugar and salt,
+                accompanied by a variety of ingredients (neta), such as seafood, often raw, and vegetables. Styles of
+                sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as
+                shari, or sumeshi ("vinegared rice"). The inventor of modern sushi is believed to be Hanaya Yohei, who
+                invented nigiri-zushi, a type of sushi most known today, in which seafood is placed on hand-pressed
+                vinegared rice, around 1824 in the Edo period (1603-1867). It was the fast food of the chōnin class in
+                the Edo period. Sushi is traditionally made with medium-grain white rice.</b>
+        </p>
+    </div>
+</body>
+
+</html>
